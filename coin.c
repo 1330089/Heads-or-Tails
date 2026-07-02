@@ -6,7 +6,6 @@ int main() {
     int heads = 0, tails = 0;
 
     printf("Tossing a coin...\n");
-
     srand((unsigned int)time(NULL));
 
     for (int i = 1; i <= 3; i++) {
@@ -21,5 +20,11 @@ int main() {
 
     printf("Heads: %d, Tails: %d\n", heads, tails);
 
+    if (heads > tails) {
+        printf("You won\n");
+    } else {
+        printf("You lost\n");
+    }
+    
     return 0;
 }
