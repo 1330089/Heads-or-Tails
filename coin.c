@@ -3,7 +3,12 @@
 #include <time.h>
 
 int main() {
+    char name[50];
     int heads = 0, tails = 0;
+
+    printf("Who are you?\n> ");
+    scanf("%49s", name);
+    printf("Hello, %s!\n", name);
 
     printf("Tossing a coin...\n");
 
